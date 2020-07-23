@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script> 
+
+//string length
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+console.log(sln)
+
+//index of
+var str1 = "Please locate where 'locate' occurs!";
+var pos = str1.indexOf("locate");
+console.log(pos)
+//search method
+var str2 = "Please locate where 'locate' occurs!";
+var pos2 = str2.search("locate");
+consoe.log(pos2)
+
+//slice method
+var str3 = "Apple, Banana, Kiwi";
+var res = str3.slice(7,13);
+document.getElementById("demo").innerHTML = res; 
+
+
+//trim method
+function myFunction() {
+  var str4 = "     Hello World!     ";
+  alert(str4.trim());
+}
+
+
+//concat method
+var text1 = "Hello";
+var text2 = "World!";
+var text3 = text1.concat(" ",text2);
+document.getElementById("demo").innerHTML = text3;
+
+
+</script>
+
+</head>
+
+<body>
+
+<div id="welcome">My Second JavaScript code.</div>
+
+</body>
+</html>
