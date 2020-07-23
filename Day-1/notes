@@ -1,0 +1,203 @@
+<!-- I. Explore and explain various methods in console function.
+What is console?
+A Web console is a tool which is mainly used to log information associated with a web page like: javascript, security errors, warnings, CSS etc. 
+It enables us to interact with a web page by executing javascript expression in the contents of the page.
+
+Following are the different methods that are provided with console object:
+1. console.log(): Mainly used to log(print) the output to the console. 
+                    We can put any type inside the log(), be it a string, array, object, boolean etc. -->
+
+console.log('abc');  
+console.log(1); 
+console.log(true); 
+console.log(null); 
+console.log(undefined);  
+console.log([1, 2, 3, 4]); 
+console.log({a:1, b:2, c:3}); 
+
+<!-- 2. console.error(): Used to log error message to the console. Useful in testing of code. 
+                    By default the error message will be highlighted with red color. -->
+                    
+console.error('This is a simple error');  
+
+
+<!-- 
+3. console.warn(): Used to log warning message to the console. By default the warning message will be highlighted with yellow color. -->
+
+console.warn('This is a warning');
+
+
+<!-- 4. console.clear(): Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : 
+                    ‘Console was cleared’ while in firefox no message is returned. -->
+
+console.clear();
+
+<!-- 
+5. console.time() and console.timeEnd(): Whenever we want to know the amount of time spend by a block or a function, 
+                                    we can make use of the time() and timeEnd() methods provided by the javascript console object.  -->
+                                    
+
+console.time('abc'); 
+ let fun =  function(){ 
+     console.log('fun is running'); 
+ } 
+ let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+ } 
+ fun(); 
+ fun2(); 
+console.timeEnd('abc'); 
+
+
+<!-- 6. console.table(): This method allows us to generate a table inside a console. 
+                    The input must be an array or an object which will be shown as a table. -->
+
+console.table({'a':1, 'b':2}); 
+
+
+<!-- 7. console.count(): This method is used to count the number that the function hit by this counting method. -->
+
+
+for(let i=0;i<5;i++){ 
+    console.count(i); 
+
+
+
+<!-- 8. console.group() and console.groupEnd(): group() and groupEnd() methods of the console object 
+                                           allows us to group contents in a separate block, which will be indented. 
+                                           Just like the time() and the timeEnd() they also accepts label, again of same value. -->
+
+console.group('simple'); 
+  console.warn('warning!'); 
+  console.error('error here'); 
+  console.log('vivi vini vici'); 
+console.groupEnd('simple'); 
+console.log('new section'); 
+
+
+II. Difference between var, let and const with examples
+
+Var
+The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable.
+
+Example: var a =10;
+
+Variable declarations are processed before the execution of the code.
+The scope of a JavaScript variable declared with var is its current execution context.
+The scope of a JavaScript variable declared outside the function is global.
+
+
+
+let
+The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.
+
+Example: let a =10;
+
+The let statement allows you to create a variable with the scope limited to the block on which it is used.
+
+
+
+
+
+const
+const statement values can be assigned once and they cannot be reassigned. The scope of const statement works similar to let statements.
+
+Example: const a =10;
+
+
+
+
+
+
+
+
+III. Brief intro on available data types in Java script
+
+JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+
+Primitive data type
+Non-primitive (reference) data type
+JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. 
+You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc. For example:
+
+var a=40;//holding number  
+var b="Rahul";//holding string 
+
+
+JavaScript primitive data types
+There are five types of primitive data types in JavaScript. They are 
+--> String: 	represents sequence of characters e.g. "hello"
+--> Number:     represents numeric values e.g. 100
+--> Boolean:    represents boolean value either false or true
+--> Undefined:  represents undefined value
+--> Null:       represents null i.e. no value at all
+
+
+
+JavaScript non-primitive data types
+The non-primitive data types are as follows:
+
+--> Object: 	represents instance through which we can access members
+--> Array: 	    represents group of similar values
+--> RegExp:	    represents regular expression
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
